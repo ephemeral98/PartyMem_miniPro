@@ -1,0 +1,5 @@
+/**index.wxss**/
+#mymap{
+  height: 480rpx;
+  width: 100%;
+}
