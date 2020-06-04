@@ -1,0 +1,45 @@
+/* pages/score/score.wxss */
+.scorecontainer{
+  margin:20rpx;
+}
+.cardcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* 卡片 */
+.card{
+  width: 30%;
+  border-radius: 10rpx;
+  box-shadow: 0 0rpx 10rpx 2rpx #cccccc; 
+  margin: 15px 0;
+}
+
+/* 菜单的名字 */
+.name{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10rpx;
+}
+
+/* 图片 */
+.cardimg{
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+}
+
+.img{
+  height: 190rpx;
+}
+
+/* 字体 */
+.name{
+  font-size: 82%;
+}
+
+.menu{
+  color:#0084ff;
+}

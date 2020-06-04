@@ -1,0 +1,7 @@
+/* pages/share/share.wxss */
+#img{
+  width: 100%
+}
+#save{
+    margin: 40rpx;
+}

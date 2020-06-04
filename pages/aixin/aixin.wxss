@@ -1,1 +1,66 @@
 /* pages/aixin/aixin.wxss */
+Page{
+  background-color: #f9f9f9;
+}
+#user{
+  width: 100%;
+  height: 380rpx;
+}
+/* 菜单栏 */
+.nav{
+  display: flex;
+  justify-content: center;
+  padding: 15rpx 0;
+  margin-top: -5rpx;
+  background-color: #ffffff;
+  box-shadow: 0 0 15rpx rgba(0, 0, 0, 0.1);
+}
+/* 菜单项 */
+.nav-item{
+  width: 140rpx;
+  height: 140rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1rpx solid rgba(0, 0, 0, 0.1);
+}
+.nav-item:last-child{
+  border:0;
+}
+
+.nav-item .icon{
+  width:60rpx;
+  height: 60rpx;
+  margin: 0 auto;
+}
+/* 图标大小 */
+.nav-item .icon image{
+  width: 100%;
+  height: 100%;
+}
+/* 菜单名称 */
+.nav-item .text{
+  font-size: 26rpx;
+  color: #8799a3;
+}
+
+.tab{
+  margin: 25rpx 25rpx;
+  background-color: #ffffff;
+  min-height: 500rpx;
+}
+
+.score{
+  margin: 25rpx 25rpx 0;
+  background-color: #ffffff;
+  min-height: 500rpx;
+}
+
+.value{
+  color: red;
+}
+
+.title{
+  color: blue;
+}

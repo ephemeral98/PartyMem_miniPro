@@ -1,2 +1,33 @@
-<!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<!-- pages/user/user.wxml -->
+<view>
+    <view class="bg">
+        <view class="userAvatar">
+            <open-data type="userAvatarUrl"></open-data>
+        </view>
+        <h2>姓名</h2>
+        <h4>
+            <open-data type="userNickName"></open-data>
+        </h4>
+    </view>
+<!-- 中间部分菜单 -->
+<view class="nav">
+<navigator wx:for="{{menus}}" url="{{item.url}}">
+  <view class="nav-item">
+    <view class="icon">
+    <image src="{{item.icon}}"></image>
+    </view>
+    <view class="text">{{item.title}}</view>
+  </view>
+ </navigator>
+</view>
+<!-- 内容面板 -->
+<view class="content">
+<van-cell title="绑定学(工)号"  is-link icon="/static/icon/user4.png"/>
+<van-cell title="走访宿舍情况" is-link icon="/static/icon/user5.png"/>
+<van-cell title="我为标杆院系建设出点子" is-link icon="/static/icon/user6.png"/>
+<van-cell title="日行一善" is-link icon="/static/icon/user7.png"/>
+<van-cell title="学习强国" is-link icon="/static/icon/user8.png"/>
+<van-cell title="积分详情" is-link icon="/static/icon/user9.png"/>
+
+</view>
+</view>

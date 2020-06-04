@@ -1,0 +1,13 @@
+<!--pages/score/score.wxml-->
+<view class="scorecontainer" wx:for="{{menus}}">
+<text class="menu">{{item.menuName}}</text>
+<view class="cardcontainer">
+<navigator url="{{m.url}}" class="card" wx:for="{{item.menuItem}}" wx:for-item="m">
+          <view class="img">
+               <image class="cardimg" src="{{m.icon}}"/>
+          </view>
+          <view class="name">{{m.name}}</view>
+    </navigator>
+</view>
+
+</view>

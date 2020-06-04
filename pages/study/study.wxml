@@ -1,2 +1,10 @@
-<!--pages/study/study.wxml-->
-<text>pages/study/study.wxml</text>
+<van-tabs active="{{ active }}">
+  <van-tab title="中国特色社会主义理论体系">
+  <view>
+  <news-card wx:for="{{newsList}}" title="{{item.title}}" src="{{item.src}}"></news-card>
+  </view>
+  </van-tab>
+  <van-tab title="习近平讲话">内容 2</van-tab>
+  <van-tab title="党章党徽">内容 3</van-tab>
+  <van-tab title="每日一学">内容 4</van-tab>
+</van-tabs>

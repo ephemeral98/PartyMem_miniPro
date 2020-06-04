@@ -1,0 +1,10 @@
+<!--components/guoqiCard/guoqicard.wxml-->
+<view class="newCard" bindtap="goTo">
+  <!-- 新闻标题 -->
+  <view class="title">{{title}}</view>
+  <!-- 新闻图片 -->
+  <view class="newImage">
+    <image mode="aspectFill" src="{{src}}"></image>
+  </view>
+</view>
+<!-- 新闻卡片结束 -->

@@ -5,13 +5,19 @@
     "pages/study/study",
     "pages/aixin/aixin",
     "pages/guoqi/guoqi",
-    "pages/user/user"
+    "pages/user/user",
+    "components/newsCard/newsCard",
+    "pages/news/news",
+    "pages/sanhuiyike/sanhuiyike",
+    "pages/guoqipage/guoqipage",
+    "pages/web/web",
+    "pages/share/share"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarBackgroundColor": "#00c0ff",
     "navigationBarTitleText": "党员素质肖像",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
   "usingComponents": {
     "van-action-sheet": "./dist/action-sheet/index",
@@ -74,7 +80,9 @@
     "van-grid-item": "./dist/grid-item/index",
     "van-dropdown-menu": "./dist/dropdown-menu/index",
     "van-dropdown-item": "./dist/dropdown-item/index",
-    "van-skeleton": "./dist/skeleton/index"
+    "van-skeleton": "./dist/skeleton/index",
+    "news-card": "./components/newsCard/newsCard",
+    "guoqiCard": "./components/guoqiCard/guoqicard"
   },
   "tabBar": {
     "color": "#000000",

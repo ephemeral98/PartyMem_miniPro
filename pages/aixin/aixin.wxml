@@ -1,2 +1,32 @@
 <!--pages/aixin/aixin.wxml-->
-<text>pages/aixin/aixin.wxml</text>
+<view>
+  <!-- 人物部分 -->
+  <image src="cloud://ba-125.6261-ba-125-1302291642/cloudPath/1590845912282.png" id="user"></image>
+</view>
+<!-- 中间部分菜单 -->
+<view class="nav">
+<navigator wx:for="{{menus}}" url="{{item.url}}">
+  <view class="nav-item">
+    <view class="icon">
+    <image src="{{item.icon}}"></image>
+    </view>
+    <view class="text">{{item.title}}</view>
+  </view>
+ </navigator>
+</view>
+
+<!-- 分数面板 -->
+<view class="score">
+<van-tabs active="{{ 0 }}">
+  <van-tab title="{{item.name}}" wx:for="{{score}}">
+     <van-cell-group>
+     <!-- g是指 指数里面的group--> 
+     <van-cell wx:for="{{item.group}}" wx:for-item="g">
+     <!-- 插槽 -->
+     <text class="value">{{g.value}}</text>
+     <text slot="title" class="title">{{g.title}}</text>
+     </van-cell>
+    </van-cell-group>
+   </van-tab>
+  </van-tabs>
+</view>    
